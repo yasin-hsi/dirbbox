@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(fontFamily: 'Gilroy'),
-        home: LoginPage(),
+        home: const LoginPage(),
         initialRoute: '/login',
         routes: {
-          '/login': (context) => LoginPage(),
+          '/login': (context) => const LoginPage(),
           '/home': (context) => HomePage(),
           '/settings': (context) => SettingsPage(),
           '/profile': (context) => const ProfilePage(),
