@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(
         children: [
-          Container(
+          SizedBox(
             width: MediaQuery.of(context).size.width,
             child: Image.asset(
               'assets/images/login_bg.png',
@@ -34,9 +36,9 @@ class LoginPage extends StatelessWidget {
                     style:
                         TextStyle(fontSize: 38, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 20),
-                Container(
+                const SizedBox(
                   width: 240,
-                  child: const Text(
+                  child: Text(
                       'Best cloud storage platform for all business and individuals to manage there data\n\nJoin For Free.',
                       style: TextStyle(fontSize: 14, height: 1.5)),
                 ),
@@ -65,7 +67,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.of(context).pushReplacementNamed('/home');
+                        Navigator.of(context).pushReplacementNamed('/profile');
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF567DF4),

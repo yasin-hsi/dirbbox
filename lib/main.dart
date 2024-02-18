@@ -7,21 +7,23 @@ import 'package:dirbbox/pages/storage_details.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(fontFamily: 'Gilroy'),
         home: LoginPage(),
-        initialRoute: '/profile',
+        initialRoute: '/login',
         routes: {
           '/login': (context) => LoginPage(),
           '/home': (context) => HomePage(),
           '/settings': (context) => SettingsPage(),
-          '/profile': (context) => ProfilePage(),
+          '/profile': (context) => const ProfilePage(),
           '/storage-details': (context) => StorageDetailsPage(),
           '/change-password': (context) => ChangePasswordPage()
         });
