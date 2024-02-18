@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(fontFamily: 'Gilroy'),
         home: LoginPage(),
-        initialRoute: '/login',
+        initialRoute: '/profile',
         routes: {
           '/login': (context) => LoginPage(),
           '/home': (context) => HomePage(),
